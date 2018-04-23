@@ -1,0 +1,24 @@
+[
+	{
+		"number": 1,
+		"question": "Quelle est la première créature à avoir voyagé dans l'espace ?",
+		"answer": "Drosophile",
+		"other_answer": "mouche"
+	},{
+		"number": 2,
+		"question": "Quelle plante a été génétiquement modifiée par la société Monsanto avec son Roundup Ready ?",
+		"answer": "soja"
+	},{
+		"number": 3,
+		"question": "Avec la laine de quel animal fait-on des vêtements en cachemire ?",
+		"answer": "chèvre"
+	},{
+		"number": 4,
+		"question": "Quelle est la consommation d’eau moyenne en litres pour une chasse d’eau tirée ?",
+		"answer": 9
+	},{
+		"number": 5,
+		"question": "Quel genre d'animal est le silure ?",
+		"answer": "poisson"
+	}
+]

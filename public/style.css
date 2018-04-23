@@ -1,0 +1,64 @@
+body {
+    background-image: url('./plants.png');
+    /*font-family: 'Open Sans', Arial, Helvetica, sans-serif;*/
+    color: rgb(59, 63, 7) !important;
+}
+
+body > div:first-child {
+    width: 80%; height: 100%;
+    padding: 20px;
+    background-color: rgba(242, 236, 210, 0.8);
+    box-shadow: 0 0 7px rgba(242, 236, 210, 1);
+}
+
+h1::after {
+    content: url('/leaf.png');
+}
+
+p {
+    text-align: center;
+}
+
+label {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+input[type=text] {
+    margin-top: 10px; 
+}
+
+input:focus {
+    border-color: #cfdc00 !important;
+    box-shadow: 0 0 7px rgba(240, 255, 24, 0.4) !important;
+}
+
+ul > li {
+    font-size: 1em;
+    list-style-type: none;
+}
+
+.name {
+    font-size: 1.2em;
+}
+
+#players > div:first-child > .name::before{
+    content: url('./parrot.png');
+}
+
+#players > div:last-child > .name::before{
+    content: url('./owl.png');
+}
+
+.btn, .btn:hover {
+    color: rgb(59, 63, 7) !important;
+}
+
+#question {
+    margin-bottom: 80px; padding: 0px;
+}
+
+#question > p:first-child {
+    font-size: 1.2em;
+}

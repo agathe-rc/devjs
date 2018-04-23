@@ -1,0 +1,51 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--[if IE]>
+      <link href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie9.min.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/g/html5shiv@3.7.3"></script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+	  <link href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie8.min.css" rel="stylesheet">
+    <![endif]-->
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <link href="/style.css" rel="stylesheet">
+    <script type="text/javascript" src="/script.js"></script>
+    <link rel="icon" type="image/png" href="/leaf_ico.png" />
+    <title>Pop Quiz</title>
+</head>
+<body>
+    <div class="container align-middle">
+        <div id="login" class="container col-5 align-middle">
+            <h1 class="display-4">Pop Quiz !</h1>
+            <form id="name-form">
+                <div class="form-group">
+                    <label class="col-12">Entrez votre nom</label><br>
+                    <input id="playername" class="form-control" type="text"><br>
+                    <input class="btn" type="submit" value="Jouer">
+                </div>
+            </form>
+            <hr>
+            <div id="highscore">
+                <p>Meilleurs scores :</p>
+                <ul></ul>
+            </div>
+        </div>
+        <div id="game" class="container col-10 align-middle">
+            <div id="question" class="col-12 justify-content-center">
+                <p></p><br>
+                <p></p>
+            </div>
+            <div id="players" class="row justify-content-between"></div>
+            <div id="results" class="row justify-content-between"></div>
+        </div>
+    </div>
+</body>
+</html>
